@@ -1,0 +1,110 @@
+#about {
+  width: 100%;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #03045e;
+  color: white;
+  padding: 30px;
+}
+#about .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.about_container .left_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 45px;
+  font-weight: 400;
+  font-size: 21px;
+}
+p {
+  padding-top: 5px;
+  font-family: "Comfortaa", cursive;
+}
+.about_container .left_box ul li {
+  padding-left: 40px;
+  list-style: none;
+  padding-top: 10px;
+  font-family: "Comfortaa", cursive;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.left_box .quote {
+  margin-top: 10px;
+  text-indent: 50px;
+  font-size: 17px;
+  font-style: italic;
+  color: blueviolet;
+}
+.about_container .right_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+.right_box img {
+  height: 450px;
+}
+
+@media screen and (max-width: 700px) {
+  .about_container {
+    flex-direction: column;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+#about .skill_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.skill_container .head {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.head .color {
+  color: blueviolet;
+}
+.skill_container .skill-set {
+  max-width: 800px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 7rem;
+  gap: 20px;
+  padding: 20px;
+}
+.skill-set i {
+  padding: 20px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.skill-set i:hover {
+  box-shadow: 5px 0px 10px 0px white, -5px 0px 10px 0px white;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+@media screen and (max-width: 700px) {
+  .skill_container .skill-set {
+    font-size: 5rem;
+  }
+}

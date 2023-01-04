@@ -1,0 +1,46 @@
+#project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: darkslateblue;
+  justify-content: space-around;
+  padding: 50px;
+  font-family: "Comfertoo";
+}
+#project .tag {
+  padding: 40px;
+  font-size: 1.6rem;
+  font-family: "Comfertoo";
+}
+.tag p {
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+.tag p span {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+#project .container {
+  padding: 40px 100px;
+  background-color: blue;
+}
+
+.container .swiper {
+  background-color: aqua;
+  width: 400px;
+  height: 500px;
+  z-index: 0;
+}
+.swiper SwiperSlide {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(4, 50, 35);
+}
+
+@media screen and (max-width: 700px) {
+  #project {
+    flex-direction: column;
+  }
+}
